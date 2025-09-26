@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Users from "./components/Users"
 import AddUser from "./components/AddUser"
 import axios from "axios"
+import Check from "./components/Check"
 
 const baseUrl = "https://reqres.in/api/users/2"
 
@@ -74,6 +75,7 @@ class App extends React.Component {
             </main>
             <aside>
                 <AddUser onAdd={this.addUser} />
+                <Check />
             </aside>
         </div>)
     }

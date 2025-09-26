@@ -99,3 +99,163 @@ form button:hover {
 .user form button:hover {
     transform: scale(1.01);
 }
+
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  max-width: 400px;
+  margin: 80px auto;
+}
+
+.check-container h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.check-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.check-button {
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.check-button:hover {
+  background-color: #666;
+  transform: scale(1.05);
+}
+
+.check-message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.check-message.authorized {
+  color: #4caf50;
+}
+
+.check-message.unauthorized {
+  color: #f44336;
+}
+
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 400px;
+  margin: 80px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.check-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.check-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.check-input::placeholder {
+  color: #ddd;
+}
+
+.check-button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.check-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.check-message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.check-message.authorized {
+  color: #4caf50;
+}
+
+.check-message.unauthorized {
+  color: #f44336;
+}
+
+
+.check-message {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.check-message.authorized {
+  color: #4CAF50;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.check-message.unauthorized {
+  color: #ff3b3b;
+  opacity: 1;
+  transform: translateY(0);
+}
