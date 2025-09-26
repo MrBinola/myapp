@@ -23,16 +23,15 @@ class AddUser extends React.Component {
                 <input type="checkbox" id="isHappy" onChange={(e) => this.setState({ isHappy: e.target.checked })} />
                 <button type="button" onClick={() => {
                     this.myForm.reset()
-                    this.userAdd = {
-                        firstname: this.state.firstname,
-                        lastname: this.state.lastname,
-                        bio: this.state.bio,
-                        age: this.state.age,
-                        isHappy: this.state.isHappy
+                    const userAdd = {
+                        firstname: this.state.firstname || (this.props.user && this.props.user.firstname),
+                        lastname: this.state.lastname || (this.props.user && this.props.user.lastname),
+                        bio: this.state.bio || (this.props.user && this.props.user.bio),
+                        age: this.state.age || (this.props.user && this.props.user.age),
+                        isHappy: this.state.isHappy || (this.props.user && this.props.user.isHappy)
                     }
-                    if (this.props.user)
-                        this.userAdd.id = this.props.user.id
-                    this.props.onAdd(this.userAdd)
+                    if (this.props.user) userAdd.id = this.props.user.id
+                        this.props.onAdd(userAdd)
                 }
                 }>Добавить</button>
             </form>
