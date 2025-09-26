@@ -4,10 +4,21 @@ import Header from "./components/Header"
 // import logo from "./img/logo.jpg"
 import Users from "./components/Users"
 import AddUser from "./components/AddUser"
+import axios from "axios"
+
+const baseUrl = "https://reqres.in/api/users/2"
 
 class App extends React.Component {
     constructor(props) {
         super(props)
+
+        axios.get(baseUrl).then((res) => {
+            console.log(res.data.data)
+        })
+        .catch((err) => {
+        console.error(err)
+      })
+
         this.state = {
             users: [
                 {
