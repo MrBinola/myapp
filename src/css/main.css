@@ -259,3 +259,50 @@ form button:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  max-width: 400px;
+  margin: 80px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition: transform 0.3s ease;
+}
+
+.check-container:hover {
+  transform: scale(1.05);
+}
+
+
+.check-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  max-width: 400px;
+  margin: 80px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.check-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7),
+              0 0 45px rgba(255, 255, 255, 0.5);
+}
