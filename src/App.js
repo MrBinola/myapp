@@ -7,6 +7,7 @@ import Image from "./components/Image";
 import BMWPhoto from "./img/logo3.jpg";
 import Counter from "./components/Counter";
 import ScrollTop from "./components/ScrollTop";
+import ScrollBottom from "./components/ScrollBottom";
 
 class App extends React.Component {
     constructor(props) {
@@ -50,6 +51,7 @@ class App extends React.Component {
             </aside>
             <Counter target={2300} />
             <ScrollTop />
+            <ScrollBottom />
         </div>)
     }
 

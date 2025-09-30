@@ -555,3 +555,117 @@ form {
   background: #555;
   transform: scale(1.1);
 }
+
+.scroll-bottom {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-bottom:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-bottom {
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top:hover,
+.scroll-bottom:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+.scroll-top,
+.scroll-bottom {
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+}
+
+.scroll-top {
+  bottom: 30px;
+}
+
+.scroll-bottom {
+  bottom: 90px;
+}
+
+.scroll-top:hover,
+.scroll-bottom:hover {
+  background: #555;
+  transform: scale(1.15);
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: #555;
+  transform: scale(1.1);
+}
