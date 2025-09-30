@@ -11,3 +11,7 @@ yarn-error.log*
 
 # Environment files
 .env
+
+*.jpg
+*.jpeg
+*.png
