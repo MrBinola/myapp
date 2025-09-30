@@ -512,3 +512,24 @@ body {
     transform: translateY(0);
   }
 }
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+form {
+  margin-bottom: 30px;
+}
