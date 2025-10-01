@@ -8,12 +8,14 @@ import BMWPhoto from "./img/logo3.jpg";
 import Counter from "./components/Counter";
 import ScrollTop from "./components/ScrollTop";
 import ScrollBottom from "./components/ScrollBottom";
+import Modal from "./components/Modal";
 
 class App extends React.Component {
     constructor(props) {
         super(props)
 
         this.state = {
+            showModal: false,
             users: [
                 {
                     id: 1,
@@ -38,6 +40,10 @@ class App extends React.Component {
         this.editUser = this.editUser.bind(this)
     }
 
+        toggleModal = () => {
+            this.setState({ showModal: !this.state.showModal });
+    };
+
     render() {
         return (<div>
             <Header title="Список пользователей" />
@@ -47,6 +53,12 @@ class App extends React.Component {
             </main>
             <aside>
                 <AddUser onAdd={this.addUser} />
+                <button className="itsme-btn" onClick={this.toggleModal}>
+                  It's me
+                </button>
+
+                <Modal show={this.state.showModal} onClose={this.toggleModal} />
+
                 <Check />
             </aside>
             <Counter target={2300} />
